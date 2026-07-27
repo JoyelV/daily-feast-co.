@@ -111,9 +111,9 @@ function Index() {
               {/* Plan */}
               <div className="grid sm:grid-cols-2 gap-3 mb-6">
                 {([
-                  { id: "onetime", label: "One-Time Purchase", sub: "No commitment, order anytime", price: (perMeal * count).toFixed(2) },
-                  { id: "subscribe", label: "Subscribe & Save 15%", sub: "Skip or cancel anytime", price: (perMeal * count * 0.85).toFixed(2), badge: true },
-                ] as const).map((opt) => {
+                  { id: "onetime" as const, label: "One-Time Purchase", sub: "No commitment, order anytime", price: (perMeal * count).toFixed(2), badge: false },
+                  { id: "subscribe" as const, label: "Subscribe & Save 15%", sub: "Skip or cancel anytime", price: (perMeal * count * 0.85).toFixed(2), badge: true },
+                ]).map((opt) => {
                   const active = plan === opt.id;
                   return (
                     <button
