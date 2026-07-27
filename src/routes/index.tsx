@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import heroAsset from "@/assets/hero-meals.png.asset.json";
+import heroImage from "@/assets/hero-meals-v2.jpg";
 import mealDahl from "@/assets/meal-dahl.jpg";
 import mealCurry from "@/assets/meal-curry.jpg";
 import mealLasagna from "@/assets/meal-lasagna.jpg";
@@ -54,7 +54,7 @@ function Index() {
             <div className="w-9 h-9 rounded-full bg-[color:var(--sage)] flex items-center justify-center">
               <Leaf className="w-4.5 h-4.5 text-[color:var(--cream)]" strokeWidth={1.5} />
             </div>
-            <span className="text-[15px] font-semibold tracking-[0.18em]">HARVEST &amp; ROOT</span>
+            <span className="text-[15px] font-semibold tracking-[0.18em]">NOURISH</span>
           </a>
           <div className="hidden md:flex items-center gap-10 text-sm text-foreground/80">
             <a href="#meals" className="hover:text-foreground">Meals</a>
@@ -208,10 +208,12 @@ function Index() {
             <div className="absolute -inset-8 rounded-[3rem] bg-[color:var(--beige)]/60 -z-10 blur-2xl" aria-hidden />
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[color:var(--beige)]">
               <img
-                src={heroAsset.url}
-                alt="Hands holding a stack of chef-crafted meal trays"
+                src={heroImage}
+                alt="Hands holding a stack of Nourish chef-crafted meal trays"
                 className="w-full h-full object-cover"
                 loading="eager"
+                width={1200}
+                height={1504}
               />
             </div>
             <div className="hidden md:flex absolute -bottom-6 -left-6 card-soft p-4 gap-3 items-center max-w-[240px]">
@@ -439,7 +441,7 @@ function Index() {
       <section className="mx-auto max-w-[1400px] px-6 pb-24">
         <div className="flex items-end justify-between gap-6 mb-8 flex-wrap">
           <div>
-            <span className="eyebrow"><Instagram className="w-3.5 h-3.5" /> @harvestandroot</span>
+            <span className="eyebrow"><Instagram className="w-3.5 h-3.5" /> @nourish</span>
             <h2 className="text-3xl sm:text-4xl font-medium tracking-tight mt-3">Tag us in your kitchen.</h2>
           </div>
           <a className="btn-ghost text-sm" href="#">Follow along <ArrowRight className="w-4 h-4" /></a>
@@ -505,7 +507,7 @@ function Index() {
               <div className="w-9 h-9 rounded-full bg-[color:var(--sage)] flex items-center justify-center">
                 <Leaf className="w-4 h-4 text-[color:var(--cream)]" strokeWidth={1.5} />
               </div>
-              <span className="text-[15px] font-semibold tracking-[0.18em]">HARVEST &amp; ROOT</span>
+              <span className="text-[15px] font-semibold tracking-[0.18em]">NOURISH</span>
             </div>
             <p className="text-sm text-muted-foreground mt-5 max-w-xs leading-relaxed">
               Nourishing, chef-crafted meals inspired by nature — delivered to your door.
@@ -528,7 +530,7 @@ function Index() {
         </div>
         <div className="border-t border-border/60">
           <div className="mx-auto max-w-[1400px] px-6 py-6 flex flex-wrap gap-3 items-center justify-between text-xs text-muted-foreground">
-            <span>© {new Date().getFullYear()} Harvest &amp; Root. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} Nourish. All rights reserved.</span>
             <div className="flex gap-5">
               <a href="#" className="hover:text-foreground">Privacy</a>
               <a href="#" className="hover:text-foreground">Terms</a>

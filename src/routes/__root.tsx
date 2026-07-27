@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Harvest & Root — Wholesome Chef-Crafted Meals, Delivered" },
+      { title: "Nourish — Wholesome Chef-Crafted Meals, Delivered" },
       { name: "description", content: "Chef-crafted, nutritionist-designed meals with clean ingredients and real flavor — delivered fresh to your door. Subscribe & save 15%." },
-      { name: "author", content: "Harvest & Root" },
-      { property: "og:title", content: "Harvest & Root — Wholesome Meals, Delivered" },
+      { name: "author", content: "Nourish" },
+      { property: "og:title", content: "Nourish — Wholesome Meals, Delivered" },
       { property: "og:description", content: "Nourishing, chef-crafted meals inspired by nature. Balanced, high-protein and plant-based menus delivered weekly." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
